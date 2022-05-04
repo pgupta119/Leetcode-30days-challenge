@@ -20,15 +20,16 @@ class Solution:
                 if nums[i] + nums[j] == target: #sum found
                     a.append(i) # add the index to the list
                     a.append(j) # add the index to the list
+
         return a
 # Time complexity of the code is 0(n*2)
 # Better Solution using hash table
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        hashmap = {}
-        for i in range(len(nums)):
-            complement = target - nums[i]
-            if complement in hashmap:
+        hashmap = {} # create a  dictionary which store the index and  corresponding value
+        for i in range(len(nums)): #  check for each value
+            complement = target - nums[i]  # get the number which need to add to the current so get the target value
+            if complement in hashmap: # check the  number in the dictionary if it is present or not
                 return [i, hashmap[complement]]
             hashmap[nums[i]] = i
