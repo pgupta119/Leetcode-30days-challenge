@@ -31,5 +31,10 @@ class Solution:
         for i in range(len(nums)): #  check for each value
             complement = target - nums[i]  # get the number which need to add to the current so get the target value
             if complement in hashmap: # check the  number in the dictionary if it is present or not
-                return [i, hashmap[complement]]
-            hashmap[nums[i]] = i
+                return [i, hashmap[complement]] #find the value in the dictionary, return the current and  hashmap index
+            hashmap[nums[i]] = i # otherwise store the current value
+
+x =Solution()
+print(x.twoSum([2,3,4],6)
+
+      print(""
