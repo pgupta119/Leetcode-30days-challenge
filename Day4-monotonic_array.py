@@ -30,7 +30,7 @@ class Solution:
 
 
 
-#actual solution: One pass 
+#actual solution: One pass
 class Solution:
     def isMonotonic(self, A: List[int]) -> bool:
         increasing = decreasing = True
@@ -41,5 +41,6 @@ class Solution:
                 decreasing = False
 
         return increasing or decreasing
+
 
 
