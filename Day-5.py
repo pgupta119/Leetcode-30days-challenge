@@ -25,4 +25,7 @@ class Solution:
         return True if len(set(nums)) < len(nums) else False
 
 
+y = Solution
+print(y.containsDuplicate([3,4,5,6,6,9]))
+
 
