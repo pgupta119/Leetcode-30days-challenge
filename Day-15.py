@@ -21,20 +21,17 @@
 
 class Solution:
     def guessNumber(self, n: int) -> int:
-        # for i in range(0,n+1):
-        if (guess(i) == 0):
-            return i
-
-
-class Solution:
-    def guessNumber(self, n: int) -> int:
-        s, p = 0, n
-        while s <= p:
-            m = s + (p - s) // 2
+         # # for i in range(0,n+1):
+         #        if (guess(i) == 0):
+         #            return i
+        s,p =  0, n
+        while s <=p:
+            m = s + (p-s)//2
             if (guess(m) == 0):
                 return m
             if (guess(m) == 1):
-                s = m + 1
+                s = m+1
             else:
-                p = m - 1
+                 p = m - 1
+
 
